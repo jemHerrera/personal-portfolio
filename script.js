@@ -17,6 +17,18 @@ $(document).ready(function(){
         }
     });
 
+    ['.content', 'header'].forEach(item => {
+        $(item).on('click', function(){
+            if (isBurger){
+                $('ul').css('width', '0');
+                $('li').css('display', 'none');
+                $('.burger').children().css('margin', '5% 0');
+                isBurger = false;
+            }
+        });
+    });
+
+
 
 
 

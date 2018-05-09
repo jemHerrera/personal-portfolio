@@ -143,7 +143,7 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 75vh;
+    height: 100vh;
 }
 
 h3{
@@ -177,7 +177,7 @@ h4{
     color: #f0f0f0;
     width: 85%;
     height: 60vh;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 p{
@@ -218,8 +218,9 @@ p{
 }
 
 .inner-portrait{
+    align-self: center;
     width: 50%;
-    height: 100%;
+    height: 30vw;
     position: relative;
     /* border: 1px solid red; */
 }
@@ -238,22 +239,27 @@ p{
 .tic1{
     height: 70%;
     top: 15%;
-    left: 25%;
+    left: 20%;
     box-shadow: 0 0 1em #181c22;
 }
 
 .tic2{
     height: 50%;
     top: 50%;
-    left: 57%;
+    left: 46%;
     box-shadow: 0 0 5em #181c22;
 }
 
 .tic3{
     height: 35%;
     top: 35%;
-    left: 17%;
+    left: 9%;
     box-shadow: 0 0 2em #181c22;
+}
+
+.simon1{
+    height: 80%;
+    left: 25%;
 }
 
 
@@ -293,6 +299,34 @@ p{
         margin-left: 25%;
         width: 12%;
     }
+
+
+    /* MAIN */
+    .main{
+        margin-top: 3%;
+        width: 99%;
+        height: 50vh;
+        position: relative;
+    }
+    .inner-content{
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-left: 2%;
+    }
+    p{
+        font-size:70%;
+        line-height: 1.3;
+    }
+    .main a {
+        font-size: 70%;
+    }
+    .inner-content h2{
+        font-size: 150%;
+    }
+    .inner-portrait{
+        height: 40vw;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -323,9 +357,18 @@ p{
         margin-bottom: 10%;
     }
 
-    /* BANNER */
-    header{
-        height: 100vh;
+    /* MAIN */
+    .inner-content h2{
+        font-size: 130%;
+    }
+    .tic1{
+        left: 15%;
+    }
+    .tic2{
+        left: 44%;
+    }
+    .tic3{
+        left: 4%;
     }
 }
 
@@ -334,6 +377,7 @@ p{
     /* NAV */
     nav{
         position: fixed;
+        z-index: 2;
     }
     .logo{
         position: fixed;
@@ -388,5 +432,21 @@ p{
     /* BANNER */
     h4{
         font-size: 45%;
+    }
+
+    /* MAIN */
+    .inner-content h2{
+        font-size: 100%;
+    }
+    p{
+        font-size:62%;
+        line-height: 1.3;
+    }
+    .weather-portrait > img{
+        right: 3%;
+    }
+    .simon1{
+        left: 10%;
+        top: 10%;
     }
 }
