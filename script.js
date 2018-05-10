@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    //LINKS
+    let scroll = $('.scroll')
+    scroll.click(function(e){
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 500);
+    });
+
     // BURGER MENU
     let isBurger = false
     $('.burger').on('click', function(){
@@ -28,6 +37,17 @@ $(document).ready(function(){
         });
     });
 
+    // ON SCROLL
+    $(window).scroll(function(){
+        let fadeOutElem = $('.fadeOut');
+        let positionTop = $(document).scrollTop();
+        let positionBottom = positionTop + $(window).height();
+        fadeOutElem.each(function(){
+            let element = $(this),
+                offsetTop = element.offset().top;
+                if(positionTop>offsetTop) element.css('opacity', 1 - (positionTop - offsetTop)/500);
+        });
+    });
 
 
 

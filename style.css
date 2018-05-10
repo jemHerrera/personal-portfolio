@@ -42,6 +42,7 @@ nav div{
     position: absolute;
     align-self: center;
     cursor: pointer;
+    z-index: 2;
 }
 .logo img{
     height: 0.8em;
@@ -65,11 +66,8 @@ h1{
 }
 
 .about{
-    height: 110%;
     width: 6%;
     margin-left: 3%;
-    background-color: #181c22;
-    border-radius: 2px;
 }
 
 a{
@@ -102,6 +100,7 @@ nav div ul{
 nav div ul a{
     width: 33.33%;
     height: 100%;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 .about2{
@@ -176,8 +175,10 @@ h4{
     font-family: 'Ubuntu', sans-serif;
     color: #f0f0f0;
     width: 85%;
-    height: 60vh;
+    height: 50vh;
+    max-height: 500px;
     margin-top: 8%;
+    /* border: 1px solid green; */
 }
 
 p{
@@ -214,7 +215,7 @@ p{
     justify-content: center;
     text-align: left;
     position: relative;
-    /* border: 1px solid green; */
+    /* border: 1px solid red; */
 }
 
 .inner-portrait{
@@ -224,15 +225,18 @@ p{
     position: relative;
     /* border: 1px solid red; */
 }
+
 .inner-portrait img{
     position: absolute;
 }
 
 .main-weather{
     margin-top: 20vh;
+    /* opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
 }
 
-.main-weather img{
+.weather-portrait *{
     height: 100%;
 }
 
@@ -260,8 +264,62 @@ p{
 .simon1{
     height: 80%;
     left: 25%;
+    top: 15%;
 }
 
+.fadeIn{
+    opacity: 0;
+}
+
+/* start footer */
+.viewAll{
+    margin-top: 10%;
+    height: 1.5em;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    font-size: 1em;
+    letter-spacing: 0.4em;
+    color: #646566;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.viewAll:hover{
+    background-color: #181c22;
+    color: #e0e0e0;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30vh;
+    width: 100%;
+    background-color: #0e1218;
+}
+
+footer > *{
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 40%;
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #646566;
+}
+
+.me > h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    margin-bottom: 5%;
+}
+
+.me > p{
+    font-family: 'Ubuntu', sans-serif;
+    color: #646566;
+}
 
 /* start media queries */
 @media screen and (max-width: 992px){
@@ -290,6 +348,11 @@ p{
     }
     h4{
         font-size: 50%;
+    }
+
+    /* MAIN */
+    .main{
+        height: 60vh;
     }
 }
 

@@ -12,14 +12,14 @@
     <body>
         <nav>
             <div>
-                <a href="#" class="about">
+                <a href="#about" class="about scroll">
                     <h2>About</h2>
                 </a>
                 <ul>
-                    <a href="#main-weather" class="weather"> <li>WEATHER APP</li></a>
-                    <a href="#main-tic" class="tic"> <li>TIC-TAC-TOE</li></a>
-                    <a href="#main-simon" class="simon"> <li>SIMON GAME</li></a>
-                    <a href="#" class="about2"><li>ABOUT</li></a>
+                    <a href="#main-weather" class="weather scroll"> <li>WEATHER APP</li></a>
+                    <a href="#main-tic" class="tic scroll"> <li>TIC-TAC-TOE</li></a>
+                    <a href="#main-simon" class="simon scroll"> <li>SIMON GAME</li></a>
+                    <a href="#about" class="about2 scroll"><li>ABOUT</li></a>
                 </ul>
                 <div class="burger">
                     <div></div>
@@ -33,15 +33,15 @@
                     <div class="tab"></div>
             </div>
         </nav>
-        <header>
+        <header class="fadeOut">
             <h3>Random Collection</h3>
-            <h4>A collaboration of projects, mainly web-development apps with some random masterpieces</h4>
+            <h4>A collaboration of projects, mainly web-development apps with a few random masterpieces</h4>
         </header>
         <section class="content">
-            <div id="main-weather" class="main main-weather">
-                <div class="inner-content">
+            <div id="main-weather" class="main main-weather fadeOut">
+                <div class="inner-content weather-content">
                     <h2>Weather App</h2>
-                    <p>A dynamic webpage that detects the current location and provides weather information using Apixu API. The weather icon consists of objects such as the sun, clouds, tree, etc that dynamically evolves depending on the current weather condition, the time of the day, and even the month of the year.</p>
+                    <p>A dynamic webpage that detects the current location and provides weather information using Apixu API. The weather icon consists of objects such as the sun, clouds and tree, that dynamically evolves depending on the current weather condition, the time of the day, and the month of the year.</p>
                     <a target="_blank" href="#">View project</a>
                 </div>
                 <div class="inner-portrait weather-portrait">
@@ -50,7 +50,7 @@
                     <img class="stars" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950016/stars-01-01.png">
                 </div>
             </div>
-            <div id="main-tic" class="main main-tic">
+            <div id="main-tic" class="main main-tic fadeOut">
                 <div class="inner-portrait">
                     <img class="tic1" src="images/tic1.png">
                     <img class="tic2" src="images/tic2.png">
@@ -58,14 +58,14 @@
                 </div>
                 <div class="inner-content">
                     <h2>Tic-Tac-Toe</h2>
-                    <p>A page where the user battles against the computer in the game of Tic-Tac-Toe. Defeating the AI would be impossible, though. </p>
+                    <p>A page where the user battle against the computer in the game of Tic-Tac-Toe. Please be sure enable javascript when playing on mobile devices.</p>
                     <a target="_blank" href="https://jemherrera.github.io/Scribblish-Tic-Tac-Toe/">View project</a>
                 </div>
             </div>
-            <div id="main-simon" class="main main-simon">
+            <div id="main-simon" class="main main-simon fadeOut">
                 <div class="inner-content">
                     <h2>Simon Game</h2>
-                    <p>Simon is a memory game where the user repeats sequence of steps that becomes progressively longer and more compex as the game progresses.</p>
+                    <p>Simon is a memory game where the user repeats sequence of steps that becomes progressively longer and more compex as the game progresses. The original simon game is actually circular or pie shaped, but slight modifications were made to experiment with css animations.  </p>
                     <a target="_blank" href="https://jemherrera.github.io/Scribblish-Simon/">View project</a>
                 </div>
                 <div class="inner-portrait simon-portrait">
@@ -73,6 +73,16 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <a class = "viewAll" href="#">VIEW ALL PROJECTS</a>
+        <footer id="about">
+            <div class="me">
+                <h2>ABOUT</h2>
+                <p>Jem Herrera is a front-end web-developer from Canada. He enjoys programming, creating random masterpieces, tinkering electronics and playing basketball.</p>
+                <p>&copy; 2018 jemHerrera</p>
+            </div>
+            <div class="contact">
+                
+            </div>
+        </footer>
     </body>
 </html>
