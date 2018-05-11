@@ -273,7 +273,7 @@ p{
 
 /* start footer */
 .viewAll{
-    margin-top: 10%;
+    margin-top: 15%;
     height: 1.5em;
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -284,15 +284,16 @@ p{
 }
 
 .viewAll:hover{
-    background-color: #181c22;
+    background-color: rgba(0, 0, 0, 0.4);
     color: #e0e0e0;
 }
 
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    height: 30vh;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 40vh;
     width: 100%;
     background-color: #0e1218;
 }
@@ -300,25 +301,40 @@ footer{
 footer > *{
     /* border: 1px solid red; */
     height: 100%;
-    width: 40%;
+    width: 30%;
 }
 
-.me{
+.me, .contact{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: #646566;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 80%;
 }
 
-.me > h2{
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.me > h2, .contact > h2, i{
     font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     margin-bottom: 5%;
+    color: #646566;
 }
 
-.me > p{
+footer p{
     font-family: 'Ubuntu', sans-serif;
     color: #646566;
+    text-align: justify;
+}
+
+.links a{
+    margin: 10%;
 }
 
 /* start media queries */
@@ -432,6 +448,21 @@ footer > *{
     }
     .tic3{
         left: 4%;
+    }
+
+    /* FOOTER */
+    .viewAll{
+        font-size: 65%;
+    }
+    .me > h2, .contact > h2, i{
+        font-size: 80%;
+        margin-bottom: 5%;
+    }
+    footer > *{
+        width: 40%;
+    }
+    footer p{
+        font-size: 50%;
     }
 }
 

@@ -38,16 +38,16 @@ $(document).ready(function(){
     });
 
     // ON SCROLL
-    $(window).scroll(function(){
-        let fadeOutElem = $('.fadeOut');
-        let positionTop = $(document).scrollTop();
-        let positionBottom = positionTop + $(window).height();
-        fadeOutElem.each(function(){
-            let element = $(this),
-                offsetTop = element.offset().top;
-                if(positionTop>offsetTop) element.css('opacity', 1 - (positionTop - offsetTop)/500);
-        });
-    });
+    // $(window).scroll(function(){
+    //     let fadeOutElem = $('.fadeOut');
+    //     let positionTop = $(document).scrollTop();
+    //     let positionBottom = positionTop + $(window).height();
+    //     fadeOutElem.each(function(){
+    //         let element = $(this),
+    //             offsetTop = element.offset().top;
+    //             if(positionTop>offsetTop) element.css('opacity', 1 - (positionTop - offsetTop)/500);
+    //     });
+    // });
 
 
 
