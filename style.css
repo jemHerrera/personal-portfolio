@@ -372,6 +372,12 @@ footer p{
     }
 }
 
+/* START PROJECTS */
+
+.projects-header{
+    height: 50vh;
+}
+
 @media screen and (max-width: 768px){
     /* NAV */
     .about{
