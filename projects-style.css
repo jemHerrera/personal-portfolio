@@ -5,9 +5,10 @@
 .projects-main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0.5em;
-    margin: 1em;
+    grid-gap: 1em;
+    margin: 2em 4em;
 }
+
 .main-wrapper{
     display: flex;
     align-items: flex-end;
@@ -16,6 +17,7 @@
     box-shadow: 3px 5px 20px 0.5px #0e1218;
     border-radius: 2px;
 }
+
 .info{
     display: flex;
     flex-direction: column;
@@ -24,8 +26,8 @@
     justify-content: center;
     height: 45%;
     width: 100%;
-    background-color: #000000;
-    opacity: 0.75;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
 }
 .info h2{
     font-size: 80%;
@@ -33,19 +35,60 @@
 }
 
 .info p{
+    opacity: 1;
     font-size: 50%;
-    color: #777777;
+}
+
+#main-1{
+    background: url('images/weather-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-2{
+    background: url('images/simon-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-3{
+    background: url('images/tictac-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-4{
+    background: url('images/quote-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-5{
+    background: url('images/wiki-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-6{
+    background: url('images/twitch.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#main-7{
+    background: url('images/katana.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 992px){
+    .projects-main{
+        margin: 2em 1em;
+    }
 }
 
 @media screen and (max-width: 768px){
     .projects-main{
         grid-template-columns: repeat(2, 1fr);
+        margin: 2em;
     }
     .info h2{
         font-size: 70%;
         margin-bottom: 1%;
     }
-
     .info p{
         font-size: 50%;
     }
@@ -54,5 +97,6 @@
 @media screen and (max-width: 480px){
     .projects-main{
         grid-template-columns: repeat(1, 1fr);
+        margin: 2em 1em;
     }
 }
