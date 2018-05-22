@@ -13,7 +13,7 @@
     align-items: flex-end;
     background-color: #e1e2e3;
     height: 10em;
-    box-shadow: 3px 5px 10px 1px #0e1218;
+    box-shadow: 3px 5px 20px 0.5px #0e1218;
     border-radius: 2px;
 }
 .info{
@@ -28,12 +28,13 @@
     opacity: 0.75;
 }
 .info h2{
-    font-size: 100%;
+    font-size: 80%;
     margin-bottom: 1%;
 }
 
 .info p{
     font-size: 50%;
+    color: #777777;
 }
 
 @media screen and (max-width: 768px){
@@ -41,7 +42,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .info h2{
-        font-size: 80%;
+        font-size: 70%;
         margin-bottom: 1%;
     }
 
