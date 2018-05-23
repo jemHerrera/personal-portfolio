@@ -39,20 +39,12 @@
     font-size: 50%;
 }
 
-/* #main-1{
+#main-1{
     background: url('images/weather-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
-} */
-#main-1{
-    position: relative;
 }
-#main-1 img{
-    z-index:0;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-}
+
 #main-1 div{
     z-index:1;
 }
