@@ -39,7 +39,7 @@
     font-size: 50%;
 }
 
-#main-1{
+.main-1{
     background: url('images/weather-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,12 +65,12 @@
     background-position: center;
 }
 #main-6{
-    background: url('images/banner.png')no-repeat;
+    background: url('images/twitch.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
 #main-7{
-    background: url('https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/fall-day-no-wind-01-01-01.png')no-repeat;
+    background: url('images/katana.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
