@@ -39,11 +39,10 @@
     font-size: 50%;
 }
 
-#main-1{
-    /* background: url('images/weather-snip.png')no-repeat; */
-    background-color: #ffffff;
-    /* background-size: cover;
-    background-position: center; */
+.main-1{
+    background: url('images/weather-snip.png')no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #main-2{
     background: url('images/simon-snip.png')no-repeat;
