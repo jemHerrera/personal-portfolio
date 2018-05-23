@@ -372,17 +372,17 @@ footer p{
     font-size: 50%;
 }
 
-#main-1{
+#main-1-1{
     background: url('images/weather-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
-#main-2{
+#main-2-1{
     background: url('images/simon-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
-#main-3{
+#main-3-1{
     background: url('images/tictac-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
