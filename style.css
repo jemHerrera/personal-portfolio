@@ -139,7 +139,7 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 50vh;
+    height: 75vh;
 }
 
 h3{
@@ -172,9 +172,9 @@ h4{
     font-family: 'Ubuntu', sans-serif;
     color: #f0f0f0;
     width: 85%;
-    height: 50vh;
+    height: 45vh;
     max-height: 500px;
-    margin-top: 8%;
+    margin-top: 5%;
     /* border: 1px solid green; */
 }
 
