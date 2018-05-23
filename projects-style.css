@@ -40,12 +40,12 @@
 }
 
 .main-1{
-    background: url('images/weather-snip.png')no-repeat;
+    background: url('https://github.com/jemHerrera/jem-herrera/blob/master/images/weather-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
 #main-2{
-    background: url('images/simon-snip.png')no-repeat;
+    background: url('https://github.com/jemHerrera/jem-herrera/blob/master/images/simon-snip.png')no-repeat;
     background-size: cover;
     background-position: center;
 }
