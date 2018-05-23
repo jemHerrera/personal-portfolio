@@ -44,10 +44,6 @@
     background-size: cover;
     background-position: center;
 }
-
-#main-1 div{
-    z-index:1;
-}
 #main-2{
     background: url('images/simon-snip.png')no-repeat;
     background-size: cover;
