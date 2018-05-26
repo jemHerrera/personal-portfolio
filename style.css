@@ -327,7 +327,7 @@ footer > *{
 footer p{
     font-family: 'Ubuntu', sans-serif;
     color: #646566;
-    text-align: justify;
+    text-align: center;
 }
 
 .links a{
