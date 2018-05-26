@@ -373,17 +373,17 @@ footer p{
 }
 
 #main-1-1{
-    background: url('images/weather-snip.png')no-repeat;
+    background: url('images/weather-snip.PNG')no-repeat;
     background-size: cover;
     background-position: center;
 }
 #main-2-1{
-    background: url('images/simon-snip.png')no-repeat;
+    background: url('images/simon-snip.PNG')no-repeat;
     background-size: cover;
     background-position: center;
 }
 #main-3-1{
-    background: url('images/tictac-snip.png')no-repeat;
+    background: url('images/tictac-snip.PNG')no-repeat;
     background-size: cover;
     background-position: center;
 }
