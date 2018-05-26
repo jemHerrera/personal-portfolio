@@ -339,7 +339,7 @@ footer p{
     display: none;
     grid-template-columns: 1;
     grid-gap: 1em;
-    margin: 2em 0;
+    margin: 2em;
 }
 
 .main-wrapper{
@@ -355,15 +355,15 @@ footer p{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 3%;
-    justify-content: center;
-    height: 45%;
+    padding: 0 3%;
+    justify-content: flex-end;
+    height: 30%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
     color: #ffffff;
 }
 .info h2{
-    font-size: 80%;
+    font-size: 60%;
     margin-bottom: 1%;
 }
 
@@ -371,6 +371,7 @@ footer p{
     opacity: 1;
     font-size: 50%;
 }
+
 
 #main-1-1{
     background: url('images/weather-snip.PNG')no-repeat;
@@ -490,8 +491,8 @@ footer p{
     }
     h3{
         margin-bottom: 10%;
+        font-size: 200%;
     }
-
     /* MAIN */
     .inner-content h2{
         font-size: 130%;
