@@ -19,56 +19,30 @@ nav{
     display: flex;
     flex-direction: column;
     background-color: #0e1218;
+    opacity: 90%;
     width: 100%;
-    height: 2em;
+    height: 2.5em;
 }
 
-nav div{
+nav > div{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
 .logo{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: flex-end;
-    height: 2.9em;
-    width: 4em;
-    position: absolute;
+    height: 100%;
     align-self: center;
-    cursor: pointer;
-    z-index: 2;
-}
-.logo img{
-    height: 0.8em;
-    position: absolute;
-    bottom: 0.3em;
+    margin-left: 5%;
+    font-size: 0.75em;
+    letter-spacing: 0.4em;
 }
 
 h1{
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: 300;
-    margin-bottom: 0.3em;
-}
-
-.tab{
-    border-top: 1em solid #0e1218;
-    border-left: 0.5em solid transparent;
-    border-right: 0.5em solid transparent;
-    width: 4em;
-    height: 0;
-}
-
-.about{
-    display: none;
-    width: 6%;
-    margin-left: 3%;
+    font-size: 80%;
 }
 
 a{
@@ -139,7 +113,7 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 75vh;
+    height: 95vh;
 }
 
 h3{
@@ -209,7 +183,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: left;
     position: relative;
     /* border: 1px solid red; */
@@ -393,22 +367,11 @@ footer p{
 /* start media queries */
 @media screen and (max-width: 992px){
     /* NAV */
-    .logo{
-        margin-left: 5%;
-        align-self: flex-start;
-    }
-    h1{
-        font-size: 80%;
-    }
-    .about{
-        margin-left: 20%;
-        width: 10%;
-    }
     nav div ul{
         font-size: 0.45em;
         letter-spacing: 0.3em;
         height: 100%;
-        width: 50%;
+        width: 40%;
     }
 
     /* BANNER */
@@ -426,13 +389,6 @@ footer p{
 }
 
 @media screen and (max-width: 768px){
-    /* NAV */
-    .about{
-        margin-left: 25%;
-        width: 12%;
-    }
-
-
     /* MAIN */
     .main{
         display: none;
@@ -475,20 +431,10 @@ footer p{
     h1{
         font-size: 70%;
     }
-    .logo img{
-        height: 0.6em;
-    }
-    .tab{
-        width: 3em;
-    }
     nav div ul{
-        width: 60%;
+        width: 40%;
         font-size: 0.4em;
         letter-spacing: 0.2em;
-    }
-    .about{
-        margin-left: 23%;
-        font-size: 80%;
     }
     h3{
         margin-bottom: 10%;
@@ -532,19 +478,7 @@ footer p{
         z-index: 2;
     }
     .logo{
-        position: fixed;
-        justify-content: center;
-        height: 2em;
-        margin:0;
-    }
-    .logo img{
-        display:none;
-    }
-    .tab{
-        display: none;
-    }
-    .about{
-        display: none;
+        margin-left: 5%;
     }
     .about2{
         display: flex;
@@ -559,9 +493,6 @@ footer p{
     }
     .simon{
         display: none;
-    }
-    nav div{
-        justify-content: flex-end;
     }
     .burger{
         display:flex;
