@@ -1,58 +1,65 @@
+.projects-nav{
+    justify-content: flex-start;
+    position: fixed;
+}
 .projects-header{
     height: 75vh;
 }
 
+.all{
+    margin: 5% auto;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    color: #b5b5b5;
+}
 .projects-main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5em;
-    margin: 2em 4em;
+    margin: 2em 10em;
 }
 
 .main-wrapper{
     display: flex;
-    align-items: flex-end;
-    background-color: #e1e2e3;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: #0e1218;
     height: 15em;
-    box-shadow: 3px 5px 20px 1px #0e1218;
     border-radius: 2px;
 }
+.empty{
+    background-color: transparent;
+}
+.info{
+    width: 100%;
+}
 
+.info h2{
+    font-size: 85%;
+    letter-spacing: 0.2em;
+}
+.info p{
+    margin: 3%;
+    text-align: center;
+}
+.main-wrapper a{
+    width: 30%;
+    align-self: center;
+    margin: auto;
+}
+@media screen and (max-width: 1400px){
+    .info p{
+        font-size: 65%;
+    }
+    .projects-main{
+        margin: 2em 5em;
+    }
+    .main-wrapper a{
+        width: 40%;
+    }
 
-#main-1{
-    background: url('images/weather-snip.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-2{
-    background: url('images/simon-snip.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-3{
-    background: url('images/tictac-snip.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-4{
-    background: url('images/quote-snip.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-5{
-    background: url('images/wiki-snip.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-6{
-    background: url('images/twitch.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-#main-7{
-    background: url('images/katana.PNG')no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 @media screen and (max-width: 992px){
     .projects-main{
@@ -62,21 +69,39 @@
 
 @media screen and (max-width: 768px){
     .projects-main{
-        grid-template-columns: repeat(2, 1fr);
-        margin: 2em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em;
+        margin: 2em 0;
+    }
+    .main-wrapper a{
+        width: 30%;
+    }
+    .empty{
+        background-color: #0e1218;
+    }
+    .empty2{
+        background-color: transparent;
     }
     .info h2{
-        font-size: 70%;
+        font-size: 100%;
         margin-bottom: 1%;
     }
+    body> h2{
+        display: none;
+    }
     .info p{
-        font-size: 50%;
+        font-size: 70%;
     }
 }
 
 @media screen and (max-width: 480px){
-    .projects-main{
-        grid-template-columns: repeat(1, 1fr);
-        margin: 2em 1em;
+    .info h2{
+        font-size: 70%;
+    }
+    .info p{
+        font-size: 60%;
+    }
+    .main-wrapper a{
+        width: 50%;
     }
 }

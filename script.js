@@ -45,15 +45,7 @@ $(document).ready(function(){
     //     fadeOutElem.each(function(){
     //         let element = $(this),
     //             offsetTop = element.offset().top;
-    //             if(positionTop>offsetTop) element.css('opacity', 1 - (positionTop - offsetTop)/500);
+    //             if(positionTop>offsetTop) element.css('opacity', 1 - (positionTop - offsetTop)/200);
     //     });
     // });
-
-
-
-
-
-
-
-
 });
