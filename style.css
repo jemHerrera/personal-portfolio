@@ -9,16 +9,21 @@
     outline: none;
 }
 body{
-    background: url('images/background-lines.png') repeat;
+    background: url('images/background-lines-small.png') repeat;
     background-size: 100vw auto;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     font-weight: 300;
     color: var(--dark);
 }
+a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
 .wrapper{
-    margin: 30vh auto 0 auto;
-    width: 75%;
+    margin: 5vh auto 0 auto;
+    width: 50%;
 }
 .flex-column{
     display: flex;
@@ -33,9 +38,10 @@ body{
 }
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 2.65em;
+    font-size: 2.3em;
     font-weight: 300;
     margin-top: 0.1em;
+    letter-spacing:0.05em;
 }
 hr{
     background: var(--dark);
@@ -43,10 +49,11 @@ hr{
     height: 1px;
 }
 .block{
-    margin: 10% 0;
+    margin: 5% 0;
 }
 .tags{
-    margin: 0.5em 0;
+    margin: 1em 0;
+    width: 80%;
 }
 .tag{
     padding: 0.5em;
@@ -55,9 +62,10 @@ hr{
     color: var(--light);
     background-color: var(--dark);
     border-radius: 3px;
+    cursor: pointer;
 }
 .title{
-    width:55%;
+    width:65%;
 }
 
 
@@ -80,9 +88,10 @@ hr{
 }
 .jem{
     letter-spacing: 0.25em;
+    font-size:2.65em;
 }
 .greetings{
-    width: 90%;
+    width: 80%;
     margin: 1em 0;
 }
 i{
@@ -106,7 +115,13 @@ i{
 .three-columns{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
+    grid-gap: 1.75em;
+    margin: 2em 0;
+}
+.two-columns{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
     margin: 2em 0;
 }
 .box{
@@ -114,32 +129,93 @@ i{
     padding-top: 100%;
     position: relative;
 }
+.wide-box{
+    width:100%;
+    padding-top:50%;
+    position: relative;
+}
 .box-inner{
     position: absolute;
+    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+    transition-property: opacity, top, bottom, left, right;
+}
+.box:hover  > .box-inner, .wide-box:hover > .box-inner{
+    top:-0.25em;
+    bottom:-0.25em;
+    left:-0.25em;
+    right:-0.25em;
+    opacity: 1;
+    box-shadow:1px 2px 60px -10px rgb(255, 255, 255)
 }
 .transparent-box{
-    background: url('images/transparent-box.png') no-repeat;
-    background-size: cover;
-    display: flex;
+    background: url('images/transparent-box5.png') no-repeat;
+    background-size: contain;
     justify-content: flex-end;
     align-items:center;
-    opacity: 0.7;
 }
 .transparent-box-inner{
     height:70%;
 }
 h2{
     font-weight: 300;
-    font-size: 1.8em;
+    font-size: 1.25em;
+    letter-spacing:0.1em;
 }
 .bracket{
-    font-size: 2.1em;
+    font-size: 2em;
 }
 .skills{
-    margin: 0.8em 0 0 2.5em;
+    margin: 0.5em 0 0 2.5em;
+}
+.image-box-1{
+    background: url('images/jem-box.png');
+}
+.image-box-2{
+    background: url('images/jamie-box.png');
+}
+.image-box-3{
+    background: url('images/weather-box.png');
+}
+.image-box{
+    background-size: cover;
+    align-items: flex-start;
+    justify-content:flex-end;
+}
+.image-box > div{
+    height:95%;
+    width:40%;
+    justify-content:center;
+    align-items:flex-end;
+}
+.image-box h2{
+    width:80%;
+}
+
+
+
+
+
+
+/* ------FOOTER------ */
+
+
+
+
+
+
+footer{
+    width: 100vw;
+    align-self: center;
+    height: 5em;
+    color: var(--light);
+    background-color: var(--dark);
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
 }

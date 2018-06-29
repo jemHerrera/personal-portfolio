@@ -1,0 +1,8 @@
+#main{
+    display: flex;
+    /* display: none; */
+}
+#pop-up{
+    display: none;
+    /* display: flex; */
+}
