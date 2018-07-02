@@ -120,7 +120,7 @@ $(document).ready(function(){
         tinyFont = $('<p />', {class: 'tiny-font'}),
         boldSpan = $('<span />', {class: 'bold'}),
         line = '<hr>',
-        title = $('<h1 />', {class: 'title'}),
+        title = $('<h1 />', {class: 'title-text'}),
         info = $('<p />', {class: 'info sm-margin flex-column'}),
         infoText = $('<span />'),
         technologies = $('<span />', {class: 'bold sm-margin-top'}),
