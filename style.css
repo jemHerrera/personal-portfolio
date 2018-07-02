@@ -65,7 +65,13 @@ hr{
     cursor: pointer;
 }
 .title{
-    width:65%;
+    width: 65%;
+}
+.sm-margin{
+    margin: 1em 0;
+}
+.sm-margin-top{
+    margin-top: 1em;
 }
 
 
@@ -92,7 +98,6 @@ hr{
 }
 .greetings{
     width: 80%;
-    margin: 1em 0;
 }
 i{
     font-size: 165%;

@@ -1,8 +1,73 @@
 #main{
     display: flex;
-    /* display: none; */
 }
 #pop-up{
     display: none;
-    /* display: flex; */
 }
+#pop-up > button{
+    position: fixed;
+    background: url(images/exit.png) no-repeat;
+    background-size: contain;
+    height: 5em;
+    width: 5em;
+    opacity: 0.5;
+    top: 0;
+    right: 0;
+    transition: opacity 200ms ease-in-out;
+    cursor: pointer;
+}
+#pop-up > button:hover{
+    opacity:1;
+    /* background: url(images/exit2.png) no-repeat;
+    background-size: contain; */
+}
+.pop-up-head{
+    justify-content: space-between;
+    min-height: 354px;
+}
+.head-image{
+    /* background:url('images/tictac.png')no-repeat; */
+    /* background-size: contain; */
+    width: 50%;
+}
+.head-text{
+    width:45%;
+}
+.btns{
+    max-width: 8em;
+}
+.btn{
+    position: relative;
+    padding:0.6em;
+    opacity: 0.8;
+    font-family: 'Ubuntu' sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.075em;
+    transition: all 200ms ease-in-out;
+    transition-property: transform, opacity;
+}
+.btn:hover{
+    transform: translateX(0.3em);
+    opacity: 1;
+}
+.white-btn{
+    border: 1px solid var(--dark);
+}
+.black-btn{
+    background-color: var(--dark);
+    color: var(--light);
+}
+.more-img{
+    height:0;
+    width: 100%;
+    /* padding-top: 100%; */
+    /* background: url('images/weather-design.png') no-repeat; */
+    /* background-size: contain; */
+}
+
+
+/* 
+jamie: 758.1%
+portfolio: 363.9
+weather: 282.4
+ */
