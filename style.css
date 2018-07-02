@@ -38,7 +38,7 @@ a{
 }
 h1{
     font-family: 'Raleway', sans-serif;
-    font-size: 2.3em;
+    font-size: 230%;
     font-weight: 300;
     margin-top: 0.1em;
     letter-spacing:0.05em;
@@ -89,12 +89,12 @@ hr{
 
 .tiny-font{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.75em;
+    font-size: 75%;
     margin: 0.5em 0;
 }
 .jem{
     letter-spacing: 0.25em;
-    font-size:2.65em;
+    font-size:260%;
 }
 .greetings{
     width: 80%;
@@ -169,11 +169,11 @@ i{
 }
 h2{
     font-weight: 300;
-    font-size: 1.25em;
+    font-size: 125%;
     letter-spacing:0.1em;
 }
 .bracket{
-    font-size: 2em;
+    font-size: 200%;
 }
 .skills{
     margin: 0.5em 0 0 2.5em;
@@ -222,5 +222,5 @@ footer{
     background-color: var(--dark);
     justify-content: center;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 80%;
 }

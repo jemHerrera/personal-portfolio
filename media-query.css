@@ -1,9 +1,83 @@
 
 @media screen and (max-width: 1400px){
+    .wrapper{
+        width: 65%;
+    }
+    body{
+        font-size: 0.85em;
+    }
+    .head-text{
+        width:48%;
+    }
 }
 @media screen and (max-width: 900px){
+    .wrapper{
+        width: 75%;
+    }
+    .pop-up-head{
+        flex-direction: column;
+    }
+    .head-image{
+        min-height: 300px;
+        width: 100%;
+    }
+    .head-text{
+        width: 60%;
+    }
 }
 @media screen and (max-width: 768px){
+    .wrapper{
+        width: 85%;
+    }
+    .title{
+        width: 75%;
+    }
+    h2{
+        font-size: 110%;
+    }
+    .bracket{
+        font-size: 160%;
+    }
+    .three-columns{
+        grid-gap: 1em;
+    }
+    .more-img{
+        width: 85%;
+    }
 }
+@media screen and (max-width: 600px){
+    .jem{
+        font-size: 235%;
+    }
+    .three-columns{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+        width: 80%
+    }
+    .two-columns{
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        grid-gap: 2em;
+    }
+    .head-text{
+        width: 100%;
+    }
+    .head-image{
+        min-height: 300px;
+    }
+}
+
 @media screen and (max-width: 480px){
+    body{
+        font-size: 0.7em;
+    }
+    .title{
+        width: 100%;
+    }
+    .two-columns, .three-columns{
+        width: 100%;
+    }
+    .head-image{
+        min-height: 220px;
+    }
 }

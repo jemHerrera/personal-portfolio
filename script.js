@@ -113,8 +113,8 @@ $(document).ready(function(){
     function createElements(boxType, id){
 
         // CREATE HTML STATIC ELEMENTS
-        let popUpHead = $('<section />', { class: 'pop-up-head flex-row'}),
-        moreImg = $('<div />', {class: 'sm-margin more-img'}),
+        let popUpHead = $('<section />', { class: 'pop-up-head'}),
+        moreImg = $('<div />', {class: 'more-img'}),
         headImg = $('<div />', {class: 'head-image'}),
         headText = $('<div />', {class: 'head-text flex-column'}),
         tinyFont = $('<p />', {class: 'tiny-font'}),
