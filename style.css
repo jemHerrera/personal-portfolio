@@ -164,10 +164,10 @@ i{
     justify-content: flex-end;
     align-items:center;
 }
-.t-box-ver-2{
+/* .t-box-ver-2{
     background: url('images/transparent-box7.png') no-repeat;
     background-size: contain;
-}
+} */
 .transparent-box-inner{
     height:70%;
 }
