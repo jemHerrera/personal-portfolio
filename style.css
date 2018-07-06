@@ -129,14 +129,14 @@ i{
     grid-gap: 1em;
     margin: 2em 0;
 }
-.box{
+.box, .free-box{
     width: 100%;
     padding-top: 100%;
     position: relative;
 }
 .wide-box{
     width:100%;
-    padding-top:50%;
+    padding-top:100%;
     position: relative;
 }
 .box-inner{
@@ -150,7 +150,7 @@ i{
     transition: all 200ms ease-in-out;
     transition-property: opacity, top, bottom, left, right;
 }
-.box:hover  > .box-inner, .wide-box:hover > .box-inner{
+.box:hover  > .box-inner, .wide-box:hover > .box-inner, .free-box:hover > .box-inner{
     top:-0.25em;
     bottom:-0.25em;
     left:-0.25em;
@@ -159,13 +159,21 @@ i{
     box-shadow:1px 2px 60px -10px rgb(255, 255, 255)
 }
 .transparent-box{
-    background: url('images/transparent-box5.png') no-repeat;
+    background: url('images/transparent-box-8.png') no-repeat;
     background-size: contain;
     justify-content: flex-end;
     align-items:center;
 }
+.t-box-ver-2{
+    background: url('images/transparent-box7.png') no-repeat;
+    background-size: contain;
+}
 .transparent-box-inner{
     height:70%;
+}
+.transparent-box-inner2{
+    height:65%;
+    width:80%;
 }
 h2{
     font-weight: 300;
@@ -179,13 +187,13 @@ h2{
     margin: 0.5em 0 0 2.5em;
 }
 .image-box-1{
-    background: url('images/jem-box.png');
+    background: url('images/jem-box-sqr.png');
 }
 .image-box-2{
-    background: url('images/jamie-box.png');
+    background: url('images/jamie-box-sqr.png');
 }
 .image-box-3{
-    background: url('images/weather-box.png');
+    background: url('images/weather-box-sqr.png');
 }
 .image-box{
     background-size: cover;

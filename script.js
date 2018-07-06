@@ -1,6 +1,15 @@
 // POP-UP OBJECTS
 let popUps = [
     {
+        name: "Jamie's Riverview Cafe",
+        id: 'jamiesriverviewcafe',
+        category: 'FREELANCE PROJECTS',
+        sideImage: 'images/cafe.png',
+        info: 'A website for a family-owned cafe located at Red Deer, Alberta, Canada',
+        technologies: ['Wordpress', 'Javascript', 'CSS3'],
+        site: 'http://jamiesriverviewcafe.com/',
+    },
+    {
         name: 'Tic-Tac-Toe',
         id: 'tictactoe',
         category: 'JAVASCRIPT APPS',
@@ -64,7 +73,7 @@ let popUps = [
         id: 'cafe-design',
         category: 'DESIGN TEMPLATES',
         sideImage: 'images/cafe.png',
-        info: 'A design template for a cafe located at Red Deer, Alberta, Canada. The goal is to create an abstract,  black board menu look. Sketches were hand-drawn and traced in Adobe Illustrator. The site is currently in progress, and is being made in Wordpress.',
+        info: "A design template for Jamie's Riverview Cafe. The goal is to create an abstract,  black board menu look. Sketches were hand-drawn and traced in Adobe Illustrator.",
         technologies: ['Adobe Photoshop', 'Adobe Illustrator'],
         source: ['images/jamie-design.png', '758.1%']
     },
@@ -81,10 +90,11 @@ let popUps = [
 
 $(document).ready(function(){
     let scrollTarget = 0;
-    $('.box, .wide-box').on('click', function(){
+    $('.box, .wide-box, .free-box').on('click', function(){
         let id = this.id;
         if(this.className == 'box') scrollTarget = popUp('box', id);
         else if(this.className == 'wide-box') scrollTarget = popUp('wideBox', id);
+        else scrollTarget = popUp('freeBox', id);
     });
     $('#hide').on('click', function(){
         hidePopUp();
@@ -146,6 +156,12 @@ $(document).ready(function(){
         $(tinyFont).append(boldSpan);
         $(info).append(infoText, technologies, tech1, tech2, tech3);
         $(technologies).append('Technologies Used:');
+        if(boxType == 'freeBox') {
+            $(info).append(btnSpan);
+            $(boldSpan).html('FREELANCE');
+            $(tinyFont).append(' PROJECTS');
+            $(btnSpan).append(anchorBlk);
+        }
         if(boxType == 'box') {
             $(info).append(btnSpan);
             $(boldSpan).html('JAVASCRIPT');
@@ -171,9 +187,9 @@ $(document).ready(function(){
                 $(tech1).html(object.technologies[0]);
                 $(tech2).html(object.technologies[1]);
                 $(tech3).html(object.technologies[2]);
-                if(boxType == 'box'){
+                if(boxType == 'box' || boxType == 'freeBox'){
                     $(anchorBlk).attr('href', object.site);
-                    $(anchorWht).attr('href', object.github);
+                    if(boxType == 'box') $(anchorWht).attr('href', object.github);
                 }
                 else if(boxType == 'wideBox'){
                     $('.more-img').css({
