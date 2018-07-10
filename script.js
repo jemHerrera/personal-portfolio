@@ -1,6 +1,6 @@
 // POP-UP OBJECTS
 
-let popUps = $.getJSON('data.json', (data) => data);
+let popUps = $.getJSON('data.json', (data) => data).responseJSON;
 console.log(popUps);
 
 
