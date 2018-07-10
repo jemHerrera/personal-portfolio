@@ -1,9 +1,3 @@
-// POP-UP OBJECTS, GRAB DATA FROM DATA.JSON
-
-let popUps = $.getJSON('data.json', (data) => data).responseJSON;
-console.log(popUps);
-
-
 $(document).ready(function(){
     let scrollTarget = 0;
     $('.box, .wide-box, .free-box').on('click', function(){
@@ -92,30 +86,34 @@ $(document).ready(function(){
         
         
         // FILL IN ELEMENTS WITH TEXT AND IMAGES
-        for(let object of popUps){
-            if(id == object.id){
-                $(title).html(object.name);
-                $(infoText).html(object.info);
-                $('.head-image').css({
-                    'background': `url('${object.sideImage}')no-repeat`,
-                    'background-size': 'contain'
-                });
-                $(tech1).html(object.technologies[0]);
-                $(tech2).html(object.technologies[1]);
-                $(tech3).html(object.technologies[2]);
-                if(boxType == 'box' || boxType == 'freeBox'){
-                    $(anchorBlk).attr('href', object.site);
-                    if(boxType == 'box') $(anchorWht).attr('href', object.github);
-                }
-                else if(boxType == 'wideBox'){
-                    $('.more-img').css({
-                        'padding-top': object.source[1],
-                        'background': `url('${object.source[0]}') no-repeat`,
+        // POP-UP OBJECTS, GRAB DATA FROM DATA.JSON
+
+        $.getJSON('data.json', function(data){
+            for(let object of data){
+                if(id == object.id){
+                    $(title).html(object.name);
+                    $(infoText).html(object.info);
+                    $('.head-image').css({
+                        'background': `url('${object.sideImage}')no-repeat`,
                         'background-size': 'contain'
                     });
+                    $(tech1).html(object.technologies[0]);
+                    $(tech2).html(object.technologies[1]);
+                    $(tech3).html(object.technologies[2]);
+                    if(boxType == 'box' || boxType == 'freeBox'){
+                        $(anchorBlk).attr('href', object.site);
+                        if(boxType == 'box') $(anchorWht).attr('href', object.github);
+                    }
+                    else if(boxType == 'wideBox'){
+                        $('.more-img').css({
+                            'padding-top': object.source[1],
+                            'background': `url('${object.source[0]}') no-repeat`,
+                            'background-size': 'contain'
+                        });
+                    }
                 }
-            }
-        }
+            } 
+        });
     }
 });
 
