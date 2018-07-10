@@ -85,9 +85,7 @@ $(document).ready(function(){
         }
         
         
-        // FILL IN ELEMENTS WITH TEXT AND IMAGES
-        // POP-UP OBJECTS, GRAB DATA FROM DATA.JSON
-
+        // FILL IN ELEMENTS WITH TEXT AND IMAGES, GRAB DATA FROM DATA.JSON
         $.getJSON('data.json', function(data){
             for(let object of data){
                 if(id == object.id){
