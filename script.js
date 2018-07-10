@@ -2,7 +2,7 @@
 let popUps = function(data){
     return data;
 }
-$.getJSON('data.json', popUps);
+$.getJSON('data.json', popUps(data));
 console.log(popUps);
 
 $(document).ready(function(){
