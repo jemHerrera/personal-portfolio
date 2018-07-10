@@ -1,4 +1,4 @@
-// POP-UP OBJECTS
+// POP-UP OBJECTS, GRAB DATA FROM DATA.JSON
 
 let popUps = $.getJSON('data.json', (data) => data).responseJSON;
 console.log(popUps);
