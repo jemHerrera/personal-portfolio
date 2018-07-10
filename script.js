@@ -1,9 +1,8 @@
 // POP-UP OBJECTS
-let popUps = function(data){
-    return data;
-}
-$.getJSON('data.json', popUps(data));
+
+let popUps = $.getJSON('data.json', (data) => data);
 console.log(popUps);
+
 
 $(document).ready(function(){
     let scrollTarget = 0;
