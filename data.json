@@ -11,7 +11,7 @@
 	"id": "riddleBox",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/riddleBox.png",
-	"info": "A collection of mind-buggling riddles created by amazing people. Created using AngularJS and Sass.",
+	"info": "A collection of mind-buggling riddles. Developed using AngularJS and Sass.",
 	"technologies": ["AngularJS", "SCSS"],
 	"site": "https://jemherrera.github.io/riddle-box/#!/intro",
 	"github": "https://github.com/jemHerrera/riddle-box"
