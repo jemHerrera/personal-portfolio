@@ -6,7 +6,16 @@
 	"info": "A website for a family-owned cafe located at Red Deer, Alberta, Canada",
 	"technologies": ["Wordpress", "Javascript", "CSS3"],
 	"site": "http://jamiesriverviewcafe.com/"
-}, {
+},{
+	"name": "RiddleBox",
+	"id": "riddleBox",
+	"category": "JAVASCRIPT APPS",
+	"sideImage": "images/riddleBox.png",
+	"info": "A collection of mind-buggling riddles created by amazing people. Created using AngularJS and Sass.",
+	"technologies": ["AngularJS", "SCSS"],
+	"site": "https://jemherrera.github.io/riddle-box/#!/intro",
+	"github": "https://github.com/jemHerrera/riddle-box"
+},{
 	"name": "Tic-Tac-Toe",
 	"id": "tictactoe",
 	"category": "JAVASCRIPT APPS",
