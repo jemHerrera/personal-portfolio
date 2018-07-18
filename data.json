@@ -20,7 +20,7 @@
 	"id": "tictactoe",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/tictac.png",
-	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  The robot was programmed to be smart so that the player only gets draws or losses. This probably the project is where I used logic the most. Creating even a simple artificial intelligence was a daunting task for me as a beginner, but the challenge made me so excited that I could not stop coding for days.",
+	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  I programmed the robot to be smart so that the player only gets draws or losses. Creating even a simple artificial intelligence was a daunting task for me as a beginner, but the challenge made me so excited and so fired-up.",
 	"technologies": ["JQuery", "CSS3"],
 	"site": "https://jemherrera.github.io/Scribblish-Tic-Tac-Toe/",
 	"github": "https://github.com/jemHerrera/Scribblish-Tic-Tac-Toe"
@@ -38,7 +38,7 @@
 	"id": "calculator",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/calc.png",
-	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. Notice that in this project I did not use jQuery, that's because at that time I wanted to learn VanillaJs, and I wanted to atleast have the skill to traverse through the DOM without using any frameworks. Aditionally I used Bootstrap in this project as well, as challenged myself to minimize my CSS.",
+	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. I did not use JQuery on this project, that's because at that time I wanted to learn VanillaJs, and I wanted to gain more experience on traversing through the DOM without using any frameworks. Aditionally, at that time I have no solid grasp on Bootstrap, so I challenged myself to use Bootstrap in styling this project.",
 	"technologies": ["Vanilla JavaScript", "Bootstrap"],
 	"site": "https://jemherrera.github.io/Scribblish-Calculator/",
 	"github": "https://github.com/jemHerrera/Scribblish-Calculator"
@@ -47,7 +47,7 @@
 	"id": "pomodoro",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/pomodoro.png",
-	"info": "A pomodoro clock is a timer used to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Another VanillaJS project, here I wanted to sharpen my Vanilla JS and utilize Javascript's time counting functions.",
+	"info": "A pomodoro clock is a timer used to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Like the Calculator project, I used VanillaJS here to go deeper with Javascript and utilize Javascript's time counting functions.",
 	"technologies": ["Vanilla JavaScript", "CSS3"],
 	"site": "https://jemherrera.github.io/Scribblish-Pomodoro/",
 	"github": "https://github.com/jemHerrera/Scribblish-Pomodoro"
@@ -56,7 +56,7 @@
 	"id": "simon",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/simon.png",
-	"info": "An interactive memory game where the user repeats sequence of steps that becomes progressively longer and more complex. Original simon toys were traditionally circular or pie shaped, but slight modifications were made for the purpose of experimenting with css animations. In my opinion this is one of the most challenging projects that I did, solely because it required me to go deep in learning asynchonous javascript to successfully create the in-game timings.",
+	"info": "An interactive memory game where the user repeats sequence of steps that becomes progressively longer and more complex. Original simon toys were traditionally circular or pie shaped, but slight modifications were made for the purpose of experimenting with css animations. In my opinion this is one of the most challenging projects that I have done, solely because it required me to go deep in learning asynchonous javascript to successfully create in-game timings.",
 	"technologies": ["JQuery", "CSS3 Animations"],
 	"site": "https://jemherrera.github.io/Scribblish-Simon/",
 	"github": "https://github.com/jemHerrera/Scribblish-Simon"
@@ -65,7 +65,7 @@
 	"id": "portfolio-design",
 	"category": "DESIGN TEMPLATES",
 	"sideImage": "images/portfolio.png",
-	"info": "Here are the design concepts, models, themes and specific elements made for this portfolio, including the previous dark version of the website. The current design is inspired by the video game Detroit: Become Human.",
+	"info": "Here are the design concepts, models, themes and specific elements made for this portfolio, including the previous dark version of the website. The current design is inspired by the video game Detroit: Become Human. I have always been a fan of minimalist looks and technologist theme and this is what I came up with",
 	"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
 	"source": ["images/portfolio-design.png", "363.9%"]
 }, {
@@ -73,7 +73,7 @@
 	"id": "cafe-design",
 	"category": "DESIGN TEMPLATES",
 	"sideImage": "images/cafe.png",
-	"info": "A design template for Jamie's Riverview Cafe. The goal is to create an abstract, black board menu look. I had to do a lot of research about good cafe menu designs and draw a lot of hand-drawn sketches.",
+	"info": "A design template for Jamie's Riverview Cafe. The goal is to create an abstract, black board menu look. I had to do a lot of research about good cafe menu designs and draw a lot of hand-drawn sketches in order to design the website. It was challenging to design the website using a Wordpress blank theme, but persistence did the job.",
 	"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
 	"source": ["images/jamie-design.png", "758.1%"]
 }, {
@@ -81,7 +81,7 @@
 	"id": "weather-design",
 	"category": "DESIGN TEMPLATES",
 	"sideImage": "images/weather.png",
-	"info": "A design template for the Weather Application project. The design involves a weather icon that changes based on the current time of the day (day time or night time), the weather condition (cloudy, rain, clear, snow, fog etc.)  and the month of the year (four seasons).   Specific icon for almost every situation has to be created, therefore the process of creating different instances has to be done by creating multiple layers in Adobe Illustrator.",
+	"info": "A design template for the Weather Application project. The design involves a weather icon that changes based on the current time of the day (day time or night time), the weather condition (cloudy, rain, clear, snow, fog etc.)  and the month of the year (four seasons). I had to create specific object for every typical weather condition, therefore the process of creating different instances has to be done by creating multiple layers in Adobe Illustrator.",
 	"technologies": ["Adobe Illustrator"],
 	"source": ["images/weather-design.png", "282.4%"]
 }]
