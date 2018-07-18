@@ -3,7 +3,7 @@
 	"id": "jamiesriverviewcafe",
 	"category": "FREELANCE PROJECTS",
 	"sideImage": "images/cafe.png",
-	"info": "A website for a family-owned cafe located at Red Deer, Alberta, Canada",
+	"info": "A website for a family-owned cafe located at Red Deer, Alberta, Canada. This is my first freelancing project. I used this project as a good opportunity to learn Content Management Sytems like Wordpress and at the same time improve my graphic designing skills. I learned how to customize a blank theme, use a few plug-ins and touch a little bit of PHP and mySQL.",
 	"technologies": ["Wordpress", "Javascript", "CSS3"],
 	"site": "http://jamiesriverviewcafe.com/"
 },{
@@ -11,7 +11,7 @@
 	"id": "riddleBox",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/riddleBox.png",
-	"info": "A collection of mind-buggling riddles. Developed using AngularJS and Sass.",
+	"info": "A collection of brain teasers and mind-buggling riddles. I worked on this project while self-learning AngularJS to immidiately apply what I learned to an actual web-page and boost my learning process. Here's where I applied front-end framework basics ie. modules, controllers, views, scopes and directives. This is the first time I ever learned a framework and I was amazed of how organized and maintainable the code has become.",
 	"technologies": ["AngularJS", "SCSS"],
 	"site": "https://jemherrera.github.io/riddle-box/#!/intro",
 	"github": "https://github.com/jemHerrera/riddle-box"
@@ -20,7 +20,7 @@
 	"id": "tictactoe",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/tictac.png",
-	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  The robot was programmed to be smart so that the player only gets draws or losses. Be sure enable javascript when playing on mobile devices.",
+	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  The robot was programmed to be smart so that the player only gets draws or losses. This project is where I probably used javascript logic the most. Creating even a simple artificial intelligence was a very daunting task for me as a beginner, but the challenge made me so excited that I could not stop coding for days.",
 	"technologies": ["JQuery", "CSS3"],
 	"site": "https://jemherrera.github.io/Scribblish-Tic-Tac-Toe/",
 	"github": "https://github.com/jemHerrera/Scribblish-Tic-Tac-Toe"
@@ -29,7 +29,7 @@
 	"id": "weather-app",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/weather.png",
-	"info": "A dynamic webpage powered by Apixu  API displaying the current weather information. The page features a big weather icon consisting of objects i.e. the stars, clouds, trees, rain that dynamically evolves depending on the weather condition. The current temperature is also displayed, and can be toggled between Celsius and Farenheit. If a pop-up displays on the screen asking for your current location, please choose allow.",
+	"info": "A dynamic webpage powered by Apixu  API displaying the current weather information. The page features a big weather icon consisting of objects i.e. the stars, clouds, trees, rain that dynamically evolves depending on the weather condition. The current temperature is also displayed, and can be toggled between Celsius and Farenheit. This is one of FreeCodeCamp's course projects, where I learned using APIs in general. Essentially, this project is where I learned how to call and manipulate JSON data from an external source, and create dynamic content from it.",
 	"technologies": ["JQuery", "CSS3", "JSON"],
 	"site": "https://jemherrera.github.io/scribblish-weather/",
 	"github": "https://github.com/jemHerrera/scribblish-weather"
@@ -38,7 +38,7 @@
 	"id": "calculator",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/calc.png",
-	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. The design is influenced by the iphone8 calculator app.",
+	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. Notice that in this project I did not use jQuery, that's because at that time I wanted to learn VanillaJs, and I want to atleast have the skill to traverse through the DOM without using any frameworks. Aditionally I used Bootstrap in this project as well, as challenged myself to minimize my CSS.",
 	"technologies": ["Vanilla JavaScript", "Bootstrap"],
 	"site": "https://jemherrera.github.io/Scribblish-Calculator/",
 	"github": "https://github.com/jemHerrera/Scribblish-Calculator"
@@ -47,7 +47,7 @@
 	"id": "pomodoro",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/pomodoro.png",
-	"info": "A pomodoro clock is a timer used to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.",
+	"info": "A pomodoro clock is a timer used to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Another VanillaJS project, here I wanted to sharpen my Vanilla JS and utilize Javascript's time counting functions.",
 	"technologies": ["Vanilla JavaScript", "CSS3"],
 	"site": "https://jemherrera.github.io/Scribblish-Pomodoro/",
 	"github": "https://github.com/jemHerrera/Scribblish-Pomodoro"
@@ -56,7 +56,7 @@
 	"id": "simon",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/simon.png",
-	"info": "An interactive memory game where the user repeats sequence of steps that becomes progressively longer and more complex. Original simon toys were traditionally circular or pie shaped, but slight modifications were made for the purpose of experimenting with css animations.",
+	"info": "An interactive memory game where the user repeats sequence of steps that becomes progressively longer and more complex. Original simon toys were traditionally circular or pie shaped, but slight modifications were made for the purpose of experimenting with css animations. In my opinion this is one of the most challenging projects that I did, solely because it required me to go deep in learning asynchonous javascript to successfully create the in-game timings.",
 	"technologies": ["JQuery", "CSS3 Animations"],
 	"site": "https://jemherrera.github.io/Scribblish-Simon/",
 	"github": "https://github.com/jemHerrera/Scribblish-Simon"
@@ -65,7 +65,7 @@
 	"id": "portfolio-design",
 	"category": "DESIGN TEMPLATES",
 	"sideImage": "images/portfolio.png",
-	"info": "Here are the design concepts, models, themes and specific elements made for this portfolio, including the previous version of the website. The current design is inspired by the video game Detroit: Become Human.",
+	"info": "Here are the design concepts, models, themes and specific elements made for this portfolio, including the previous dark version of the website. The current design is inspired by the video game Detroit: Become Human.",
 	"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
 	"source": ["images/portfolio-design.png", "363.9%"]
 }, {
@@ -73,7 +73,7 @@
 	"id": "cafe-design",
 	"category": "DESIGN TEMPLATES",
 	"sideImage": "images/cafe.png",
-	"info": "A design template for Jamie's Riverview Cafe. The goal is to create an abstract,  black board menu look. Sketches were hand-drawn and traced in Adobe Illustrator.",
+	"info": "A design template for Jamie's Riverview Cafe. The goal is to create an abstract, black board menu look. I had to do a lot of research about good cafe menu designs and draw a lot of hand-drawn sketches.",
 	"technologies": ["Adobe Photoshop", "Adobe Illustrator"],
 	"source": ["images/jamie-design.png", "758.1%"]
 }, {
