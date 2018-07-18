@@ -11,7 +11,7 @@
 	"id": "riddleBox",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/riddleBox.png",
-	"info": "A collection of brain teasers and mind-buggling riddles. I worked on this project while self-learning AngularJS to immidiately apply what I learned to an actual web-page and boost my learning process. Here's where I applied front-end framework basics ie. modules, controllers, views, scopes and directives. This is the first time I ever learned a framework and I was amazed of how organized and maintainable the code has become.",
+	"info": "A collection of brain teasers and mind-buggling riddles. I worked on this project while still learning AngularJS and Sass to apply what I learned to an actual web-page and boost my learning process. Here I learned front-end framework basics ie. modules, controllers, views, scopes and directives. This is the first time I ever tried a front-end framework and I was amazed of how organized and maintainable the code has become.",
 	"technologies": ["AngularJS", "SCSS"],
 	"site": "https://jemherrera.github.io/riddle-box/#!/intro",
 	"github": "https://github.com/jemHerrera/riddle-box"
@@ -20,7 +20,7 @@
 	"id": "tictactoe",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/tictac.png",
-	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  The robot was programmed to be smart so that the player only gets draws or losses. This project is where I probably used javascript logic the most. Creating even a simple artificial intelligence was a very daunting task for me as a beginner, but the challenge made me so excited that I could not stop coding for days.",
+	"info": "A page where the users battle against the computer in the game of Tic-Tac-Toe.  The robot was programmed to be smart so that the player only gets draws or losses. This probably the project is where I used logic the most. Creating even a simple artificial intelligence was a daunting task for me as a beginner, but the challenge made me so excited that I could not stop coding for days.",
 	"technologies": ["JQuery", "CSS3"],
 	"site": "https://jemherrera.github.io/Scribblish-Tic-Tac-Toe/",
 	"github": "https://github.com/jemHerrera/Scribblish-Tic-Tac-Toe"
@@ -38,7 +38,7 @@
 	"id": "calculator",
 	"category": "JAVASCRIPT APPS",
 	"sideImage": "images/calc.png",
-	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. Notice that in this project I did not use jQuery, that's because at that time I wanted to learn VanillaJs, and I want to atleast have the skill to traverse through the DOM without using any frameworks. Aditionally I used Bootstrap in this project as well, as challenged myself to minimize my CSS.",
+	"info": "A calculator programmed using JavaScript and designed with Bootstrap.  It has the basic calculator functionalites, i.e. simple arithmetic,  decimals, percentage, and clear. Notice that in this project I did not use jQuery, that's because at that time I wanted to learn VanillaJs, and I wanted to atleast have the skill to traverse through the DOM without using any frameworks. Aditionally I used Bootstrap in this project as well, as challenged myself to minimize my CSS.",
 	"technologies": ["Vanilla JavaScript", "Bootstrap"],
 	"site": "https://jemherrera.github.io/Scribblish-Calculator/",
 	"github": "https://github.com/jemHerrera/Scribblish-Calculator"
