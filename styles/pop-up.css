@@ -1,10 +1,39 @@
 #main{
     display: flex;
 }
+.modal-open{
+    overflow: hidden !important;
+  }  
 #pop-up{
-    display: none;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    align-items: center;
 }
-#pop-up > button{
+.clickDisable{
+    pointer-events: none;
+}
+.pop-up-blanket{
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    z-index: 2;
+}
+.pop-up-inner{
+    height: 100%;
+    width: 50%;
+    min-width: 780px; 
+    background-color: white;
+    max-width: 1440px;
+    padding: 5%;
+    z-index: 3;
+    overflow: auto;
+}
+.pop-up-inner > button{
     position: fixed;
     background: url(../images/exit2.png) no-repeat;
     background-size: contain;
@@ -15,8 +44,9 @@
     right: 0;
     transition: opacity 200ms ease-in-out;
     cursor: pointer;
+    z-index:3;
 }
-#pop-up > button:hover{
+.pop-up-inner > button:hover{
     opacity:1;
 }
 .pop-up-head{
@@ -27,6 +57,8 @@
 .head-image{
     width: 50%;
     min-height: 250px;
+    background-size: contain !important;
+    background-position: center !important;
 }
 .head-text{
     width:45%;

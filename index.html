@@ -11,18 +11,22 @@
         <link rel='icon' type='image/png' href='images/fav.png'>
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400|Ubuntu:300,700' rel='stylesheet'>        
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous'>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-        <script src='script.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src='script.js'></script> -->
     </head>
     <body>
-        <div id='main' class='wrapper flex-column'>
+        <div id="vueApp">
+            <div id='main' class='wrapper flex-column'>
             <header class='block title'>
                 <p class='tiny-font'>
-                    <span class='bold'>10%</span> DAY-DREAMER <span class='bold'>90%</span> CHALLENGER
+                    <span class='bold'>50%</span> LOGIC <span class='bold'>50%</span> CREATIVITY
                 </p>
-                <hr>
-                <h1 class='jem'>JEM HERRERA</h1>
-                <p class='greetings'>Greetings! I’m a freelance web developer based on Calgary, Alberta Canada. I enjoy designing, programming, cooking and tinkering.  I design and develop websites as well as logos, icons, you name it. Want to work with me? Email me at jhneramuz@gmail.com.</p>
+                <hr v-bind:class="{grow: lineEffect, shrink: !lineEffect}">
+                <h1 class='jem'>{{staticContent.intro.title}}</h1>
+                <p class='greetings'>{{staticContent.intro.info[0]}}</p>
+                <p class="greetings viewMore" v-on:click="introDrawer = !introDrawer">{{staticContent.intro.info[1]}}</p>
+                <p class='greetings greetings-drawer' v-bind:class="{autoHeight: introDrawer}"><span>{{staticContent.intro.info[2]}}</span></p>
                 <div class='icons flex-row'>
                         <a href='https://www.linkedin.com/in/jemherrera/' target='_blank'><i class='fab fa-linkedin'></i></a>
                         <a href='https://github.com/jemHerrera/' target='_blank'><i class='fab fa-github-square'></i></a>
@@ -32,138 +36,70 @@
             <section class='flex-column block'>
                 <div class='flex-column title'>
                     <p class='tiny-font'>
-                        <span class='bold'>"BLUR</span> THE LINE BETWEEN <span class='bold'>WORK</span> AND <span class='bold'>PLAY"</span>
+                        <span class='bold'>"</span>THE SUPREME ACCOMPLISHMENT IS TO <span class='bold'>BLUR </span>THE THE LINE BETWEEN <span class='bold'>WORK</span> AND <span class='bold'>PLAY"</span> - A. Toynbee
                     </p>
-                    <hr>
-                    <h1>Freelance Projects</h1>
+                    <hr v-bind:class="{grow: !lineEffect, shrink: lineEffect}">
+                    <h1>{{staticContent.freelance.title}}</h1>
+                    <p class='greetings'>{{staticContent.freelance.info}}</p>
                     <p class='tags sm-margin-top'>
-                        <span class='tag'>Wordpress</span>
-                        <span class='tag'>CSS3</span>
-                        <span class='tag'>JavaScript</span>
-                        <span class='tag'>JQuery</span>
-                        <span class='tag'>PHP</span>
+                        <span v-for="tag in staticContent.freelance.tags" class='tag'>{{tag}}</span>
                     </p>
                 </div>
                 <div class='three-columns'>
-                    <div id='jamiesriverviewcafe' class='free-box'><div class='box-inner transparent-box t-box-ver-2 flex-column'>
-                        <div class='transparent-box-inner2 flex-column'>
-                            <h2>JAMIE'S RIVERVIEW CAFE</h2>
+                    <div @click="openPopUp" v-for="item in staticContent.freelance.items" v-bind:id='item.id' class='free-box'>
+                        <div class='clickDisable box-inner transparent-box t-box-ver-2 flex-column'>
+                            <div class='transparent-box-inner2 clickDisable flex-column'>
+                                <h2 class="clickDisable">{{item.title}}</h2>
+                            </div>
                         </div>
-                    </div></div>
+                    </div>
                 </div>
             </section>
             <section class='flex-column block'>
                 <div class='flex-column title'>
                     <p class='tiny-font'>
-                        <span class='bold'>"</span>I REMEMBER THOSE DAYS WHEN I ATE <span class='bold'>JAVASCRIPT</span> FOR BREAKFAST<span class='bold'>"</span>
+                        <span class='bold'>"</span>WRITE A CODE THAT IS EASY TO <span class='bold'>DELETE</span>, NOT EASY TO<span class='bold'> EXTEND"</span> - Tef
                     </p>
-                    <hr>
-                    <h1>JavaScript Apps</h1>
+                    <hr v-bind:class="{grow: lineEffect, shrink: !lineEffect}">
+                    <h1>{{staticContent.javascript.title}}</h1>
+                    <p class='greetings'>{{staticContent.javascript.info}}</p>
                     <p class='tags sm-margin-top'>
-                        <span class='tag'>HTML5</span>
-                        <span class='tag'>CSS3</span>
-                        <span class='tag'>JavaScript</span>
-                        <span class='tag'>VanillaJS</span>
-                        <span class='tag'>JQuery</span>
-                        <span class='tag'>API</span>
-                        <span class='tag'>JSON</span>
-                        <span class='tag'>Bootstrap</span>
-                        <span class='tag'>VSCode</span>
-                        <span class='tag'>Github</span>
-                        <span class='tag'>AngularJS</span>
-                        <span class='tag'>SCSS</span>
+                        <span v-for="tag in staticContent.javascript.tags" class='tag'>{{tag}}</span>
                     </p>
                 </div>
                 <div class='three-columns'>
-                    <div id='riddleBox' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>RIDDLEBOX<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>AngularJS</p>
-                                <p>SCSS</p>
+                    <div @click="openPopUp" v-bind:id='item.id' v-for="item in staticContent.javascript.items" class='box'>
+                        <div class='clickDisable box-inner transparent-box flex-column'>
+                            <div class='clickDisable transparent-box-inner flex-column'>
+                                <h2 class="clickDisable"><span class='clickDisable bracket'>[ </span>{{item.title}}<span class='clickDisable bracket'> ]</span></h2>
+                                <div class='clickDisable skills flex-column'>
+                                    <p class="clickDisable" v-for="skill in item.skills">{{skill}}</p>
+                                </div>
                             </div>
                         </div>
-                    </div></div>
-                    <div id='tictactoe' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>TIC-TAC-TOE<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>JQuery</p>
-                                <p>Artificial Intelligence</p>
-                            </div>
-                        </div>
-                    </div></div>
-                    <div id='weather-app' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>WEATHER APP<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>JQuery</p>
-                                <p>JSON</p>
-                                <p>API</p>
-                            </div>
-                        </div>
-                    </div></div>
-                    <div id='calculator' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>CALCULATOR<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>VanillaJS</p>
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-                    </div></div>
-                    <div id='pomodoro' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>POMODORO<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>VanillaJS</p>
-                                <p>HTML5</p>
-                                <p>CSS3</p>
-                            </div>
-                        </div>
-                    </div></div>
-                    <div id='simon' class='box'><div class='box-inner transparent-box flex-column'>
-                        <div class='transparent-box-inner flex-column'>
-                            <h2><span class='bracket'>[ </span>SIMON GAME<span class='bracket'> ]</span></h2>
-                            <div class='skills flex-column'>
-                                <p>JQuery</p>
-                                <p>CSS3 Animation</p>
-                            </div>
-                        </div>
-                    </div></div>
+                    </div>
                 </div>
             </section>
             <section class='flex-column block'>
                 <div class='flex-column title'>
                     <p class='tiny-font'>
-                            <span class='bold'>"</span>AND <span class='bold'>ADOBE</span> WAS MY APPETIZER<span class='bold'>"</span>
+                            <span class='bold'>"CREATIVITY</span> IS <span class='bold'>CONTAGIOUS</span>, PASS IT ON.<span class='bold'>"</span> - Albert Einstein
                     </p>
-                    <hr>
-                    <h1>Design Templates</h1>
+                    <hr v-bind:class="{grow: !lineEffect, shrink: lineEffect}">
+                    <h1>{{staticContent.design.title}}</h1>
+                    <p class='greetings'>{{staticContent.design.info}}</p>
                     <p class='tags'>
-                        <span class='tag'>Adobe Illustrator</span>
-                        <span class='tag'>Adobe Photoshop</span>
+                        <span v-for="tag in staticContent.design.tags"class='tag'>{{tag}}</span>
                     </p>
                 </div>
                 <div class='three-columns'>
-                    <div id='portfolio-design' class='wide-box'><div class='box-inner image-box image-box-1 flex-column'>
-                        <div class='flex-column'>
-                                <h2>PORTFOLIO</h2>
-                                <h2>DESIGN</h2>
+                    <div v-bind:id='item.id' @click="openPopUp" v-for="item in staticContent.design.items" class='wide-box'>
+                        <div v-bind:class="item.background" class='clickDisable box-inner image-box flex-column'>
+                            <div class='flex-column'>
+                                <h2 v-for="line in item.title" class="clickDisable">{{line}}</h2>
+                            </div>
                         </div>
-                    </div></div>
-                    <div id='cafe-design' class='wide-box'><div class='box-inner image-box image-box-2 flex-column'>
-                        <div class='flex-column'>
-                                <h2>CAFE</h2>
-                                <h2>DESIGN</h2>
-                        </div>
-                    </div></div>
-                    <div id='weather-design' class='wide-box'><div class='box-inner image-box image-box-3 flex-column'>
-                        <div class='flex-column'>
-                            <h2>WEATHER</h2>
-                            <h2>APPLICATION</h2>
-                        </div>
-                    </div></div>
+                    </div>
                 </div>
             </section>
             <section class='block'>
@@ -171,21 +107,43 @@
                     <p class='tiny-font'>
                         <span class='bold'>10%</span> DAY-DREAMER <span class='bold'>90%</span> CHALLENGER
                     </p>
-                    <hr>
-                    <h1>Coming Soon</h1>
-                    <p class='tags'>
-                        <span class='tag'>Vue</span>
-                        <span class='tag'>PHP</span>
-                        <span class='tag'>SQL</span>
-                    </p>
+                    <hr v-bind:class="{grow: lineEffect, shrink: !lineEffect}">
+                    <h1>{{staticContent.soon.title}}</h1>
+                    <p class='greetings'>{{staticContent.soon.info}}</p>
+                    <p class='tags'><span v-for="tag in staticContent.soon.tags"class='tag'>{{tag}}</span></p>
                 </div>
             </section>
             <footer class='flex-column'>
                 <p>Copyright &copy; 2018 Jem Herrera</p>
             </footer>
-        </div>
-        <div id='pop-up' class='wrapper flex-column'>
-            <button id='hide'></button>
+            </div>
+            <transition name="dropfade">
+                <div v-if="showPopUp" id='pop-up' class='flex-column'>
+                <div class="pop-up-inner">
+                    <button @click="closePopUp"></button>
+                    <section class="pop-up-head">
+                        <div class="head-image" :style="pathImage"></div>
+                        <div class="head-text">
+                            <p class="bold tiny-font">{{path.category}}</p>
+                            <hr>
+                            <h1 class="title-text">{{path.name}}</h1>
+                            <p class="info sm-margin flex-column">
+                                <span>{{path.info}}</span>
+                                <span class="bold sm-margin-top">Technologies Used:</span>
+                                <span v-for="skill in path.skills">{{skill}}</span>
+                                <span class="btns sm-margin-top flex-column">
+                                    <a v-if="path.site" v-bind:href="path.site" class="btn black-btn">VIEW SITE</a>
+                                    <a v-if="path.github" v-bind:href="path.github" class="btn white-btn">VIEW GITHUB</a>
+                                </span>
+                            </p>
+                        </div>
+                    </section>
+                    <div v-if="path.source" :style="setDesignImage" class="more-img"></div>
+                </div>
+                <div @click="closePopUp" class="pop-up-blanket"></div>
+                </div>
+            </transition>
         </div>
     </body>
+    <script src="vueScript.js"></script>
 </html>

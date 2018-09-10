@@ -16,13 +16,25 @@
     }
     .pop-up-head{
         flex-direction: column;
+        max-width: 320px;
+        margin:auto;
+    }
+    .pop-up-inner{
+        min-width: 320px;
+        width: 100%;
     }
     .head-image{
         min-height: 300px;
         width: 100%;
     }
     .head-text{
-        width: 60%;
+        width: 100%;
+    }
+    .more-img{
+        width: 100%;
+        margin: 5% auto;
+        background-size: contain !important;
+        background-position: top !important;
     }
 }
 @media screen and (max-width: 768px){
@@ -40,9 +52,6 @@
     }
     .three-columns{
         grid-gap: 1em;
-    }
-    .more-img{
-        width: 85%;
     }
 }
 @media screen and (max-width: 600px){
@@ -65,6 +74,9 @@
     .head-image{
         min-height: 300px;
     }
+    .more-image{
+        max-width: 600px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -79,5 +91,8 @@
     }
     .head-image{
         min-height: 220px;
+    }
+    .pop-up-head{
+        max-width: 300px;
     }
 }
