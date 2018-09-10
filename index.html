@@ -117,8 +117,8 @@
                 <p>Copyright &copy; 2018 Jem Herrera</p>
             </footer>
             </div>
-            <transition name="dropfade">
-                <div v-if="showPopUp" id='pop-up' class='flex-column'>
+            <transition name="dropFade">
+                <div v-if="showPopUp" id='pop-up' class='flex-column' :class="{hide: !showPopUp}">
                 <div class="pop-up-inner">
                     <button @click="closePopUp"></button>
                     <section class="pop-up-head">

@@ -185,5 +185,8 @@ new Vue({
         setInterval(function(){
             vm.lineEffect = !vm.lineEffect;
         },5000);
-    }
+        console.log(document.querySelector("#pop-up").classList);
+        document.querySelector("#pop-up").classList.remove("hide");
+        console.log(document.querySelector("#pop-up").classList);
+    },
 });
